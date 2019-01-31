@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 16, 2018, 11:50:19 PM
+    Author     : Aaditya
+*/
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.a{
+    background: url(back10.jpg)no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.navbar{
+    /*background: url(back2.jpg)no-repeat center center fixed;*/
+    border: none;
+    padding: 1% 0;
+    font-size: 1.2em;
+    position: relative;
+}
+.navbar-brand{
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+.navbar-default .navbar-nav li a{
+    color: #F21907;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active{
+    color: #F3AF07;
+    text-decoration: none;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    font-family: Times New Roman;
+}
+p{ 
+    font-family: sans-serif;
+}
+.padding{
+    padding: 50px 50px 75px 50px;
+}
+.padding .col-sm-6 img{
+    width: 70%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+.padding .col-md-6 img{
+    width: 70%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+.padding video{
+    width: 100%;
+    /*padding-top: 50px;*/
+    padding-right: 10px;
+    padding-left: 40px;
+}
+.about{
+    color: #fff;
+}
+p{
+    text-align: justify;
+}
+.ml-auto, .mx-auto{
+	margin-left: auto!important;
+        align-items: center;
+}
+.mr-auto, .mx-auto{
+	margin-right: auto!important;
+}

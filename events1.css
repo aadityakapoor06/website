@@ -1,0 +1,569 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 12, 2018, 12:16:14 AM
+    Author     : Aaditya
+*/
+
+div{
+    display: block;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+.main-container{
+    overflow: hidden;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: block;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-lg-2, .col-lg-8 .col-lg-12 .col{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header .navbar{
+    padding: 0;
+}
+@media screen and (max-width: 768px) .navbar-expand-lg{
+    background-color: #4125dd;
+    margin-top: 30px;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.navbar-toggler:not(:disabled):not(:disabled){
+    cursor: pointer;
+}
+.header .navbar-toggler{
+    margin-right: 15px;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -78px;
+}
+button,html[type=button]{
+    -webkit-appearance: button;
+}
+.navbar-toggler{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+}
+
+button, input{
+    overflow: visible;
+}
+button,input,optgroup,select,textarea{
+    margin: 0;
+    font-family: inherit;
+}
+@media screen and (max-widrh: 768px) .header .navbar-toggler-icon{
+    background-color: #cf057c;
+    outline: none;
+    padding-top: 5px;
+    color: #fff;
+}
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.navbar-collapse{
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.collapse{
+    display: none;
+}
+.ml-auto{
+    margin-left: auto!important;
+}
+.navbar-nav{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+ul, menu, dir{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.dropdown{
+    position: relative;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.header .white-color .navbar-nav .nav-link{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) .header .navbar-nav .nav-link{
+    line-height: 45px;
+}
+.header .navbar-nav .nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding:  0 20px;
+    position: relative;
+}
+.nav-link{
+    display: block;
+}
+a{
+    transition: all 0.3s;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:-webkit-any-link{
+    cursor: pointer;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.sr-only{
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+elememt.style{
+    display: none;
+}
+@media screen and (max-width: 768px) .header .navbar-nav .dropdown-menu{
+    background: #cf057c;
+    padding: 10px 15px;
+    border-radius: 0;
+    top: 0;
+    border: none;
+}
+.navbar-nav .dropdown-menu{
+    position: static;
+    float: none;
+}
+.slideUpIn{
+    animation-name:  slideUpIn;
+}
+.animation{
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+.dropdown-menu{
+    left: 0;
+    z-index: 1000;
+    min-width: 10rem;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+}
+.header ul li.header-ticket{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 31px;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+.base-style-2 ul li.header-ticket a{
+    background: transparent;
+    transition: all 0.4s;
+}
+.header ul li.header-ticket a{
+    padding:  15px 30px !important;
+    line-height: 0 !important;
+    border-radius: 28px;
+}
+@media screen and (max-width: 768px) .pr-0{
+    padding-right: 15px !important;
+}
+.pr-0 .px-0{
+    padding-right: 0!important;
+}
+.bg-about{
+    background-image: url(back9.jpg);
+}
+.pad-head{
+    padding: 170px 0 170px;
+}
+@media screen and(max-width: 768px).pad100, .padtb, .pad80, .ptb{
+    padding: 30px 0;
+}
+.bg-color{
+    background: url(bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.text-center{
+    text-align: center!important;
+}
+@media screen and (max-width: 768px).section-title .title-text{
+    margin: 0 0 20px;
+}
+.event-schedule-area-two ul.custom-tab{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+.nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+dl,ol,ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ul,menu,dir{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+@media screen and (max-width: 768px).event-schedule-area-two ul.custom-tab li{
+    margin-right: 18px;
+}
+.event-schedule-area-two ul.custom-tab li{
+    margin-right: 70px;
+    position: relative;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+@media screen and (max-width: 768px).event-schedule-area-two ul.custom-tab li a{
+    font-size: 16px;
+    line-height: 0px;
+    padding: 22px 8px;
+}
+.event-schedule-area-two ul.custom-tab li a{
+    color: #4125dd;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 35px 0;
+    position: relative;
+}
+
+
+.nav-link{
+    display: block;
+    padding: .5rem 1rem;
+}
+a{
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    
+}
+a:hover{
+    color: #4125dd;
+}
+a{
+    background-color:  transparent;
+}
+a:-webkit-any-link{
+    cursor: pointer;
+}
+:focus{
+    outline: -webkit-focus ring color auto 5px;
+}
+.event-schedule-area-two ul.custom-tab li{
+    margin-right: 70px;
+    position: relative;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.mr-0, .mx-0{
+    margin-right: relative;
+}
+.d-none{
+    display: none!important;
+}
+.tab-content>.active{
+    display: block;
+}
+.fade.show{
+    opacity: 1;
+}
+.fade{
+    transition: opacity .15s linear;
+}
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.event-schedule-area-two .tab-content .table tbody tr td{
+    padding: 30px 20px;
+    vertical-align: middle;
+}
+.table td, .table th{
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.event-schedule-area-two.tab-content.table{
+    box-shadow: 0 1px 30px rgba(0,0,0,0.1);
+    margin-bottom: 0;
+}
+.table{
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+}
+table{
+    border-collapse: collapse;
+}
+table{
+    display: table;
+    border-spacing: 2px;
+    border-color: grey;
+}
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.event-schedule-area-two .tab-content .table thead{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+}
+.event-schedule-area-two .tab-content .table thead tr th{
+    padding: 20px;
+    border: 0;
+}
+.table thead th{
+    vertical-align: bottom;
+}
+.text-center{
+    text-align: center!important;
+}
+th{
+    font-weight: bold;
+}
+td, th{
+    display:  table-cell;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.event-schedule-area-two .tab-content .table tbody tr.inner-box{
+    border-bottom: 1px solid #fff;
+}
+.event-schedule-area-two .tab-content .table tbody tr td .r-no span{
+    color: #fff;
+}
+@media screen and (max-width: 768px).event-schedule-area-two .tab-content .table tbody tr th{
+    padding: 30px 10px;
+}
+.event-schedule-area-two .tab-content .table tbody tr th{
+    border: 0;
+    vertical-align: middle;
+}
+th{
+    text-align: inherit;
+}
+.event-schedule-area-two .tab-content .table tbody tr th .event-date span{
+    color: #fff;
+    text-align: center;
+}
+p{
+    color: #fff;
+}
+@media screen and (max-width: 768px) .event-schedule-area-two .tab-content .table tbody tr td .event-wrap .organizers{
+    margin: 0;
+}
+.event-schedule-area-two .tab-content .table tbody tr td .event-wrap .organizers{
+    display:  inline-flex;
+}
+@media screen and (max-width: 768px) .event-schedule-area-two .tab-content .table tbody tr td .event-wrap .categories{
+    margin: 0;
+}
+.event-schedule-area-two .tab-content .table tbody tr td .event-wrap .categories{
+    display:  inline-flex;
+}
+.event-schedule-area-two .tab-content .table tbody tr td .primary-btn{
+    margin-top: 0;
+    text-align: center;
+}
+@media screen and (max-width: 768px) .event-schedule-area-two .primary-btn{
+    margin-top: 30px;
+}
+.event-schedule-area-two .primary-btn{
+    margin-top: 40px;
+}
+@media screen and (max-width: 768px) .event-schedule-area-two .tab-content .table tbody tr td .primary-btn a.btn-primary{
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 12px;
+}
+.primary-btn a.btn-primary{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 55px;
+    padding: 0px 45px;
+    border-radius: 28px;
+    display: inline-block;
+    text-transform: capitalize;
+    border-color: #4125dd;
+    background-color: #4125dd;
+    transition:  all 0.4s;
+}
+.border-bottom-0{
+    border-bottom: 0!important;
+}
+footer{
+    width: 100%;
+    background: url(footer.jpg);
+    padding: 5% 5% 10% 5%;
+    
+}
+.col-sm-6 h3{
+    font-size: 45px;
+    color: #fff;
+}
+.section4 i{
+    color:#fff;
+    font-size: 20px;
+    padding:3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.fa i{
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.fab{
+    padding: 15px;
+    font-size: 3em;
+    text-decoration: none;
+    color: #fff;
+}
+.fab:hover{
+    color: #d5d5d5;
+    text-decoration: none;
+}
+.event-schedule-area-two .tab-content .table tbody tr th .event-date span{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: normal;
+}
+.event-schedule-area-two .tab-content .table tbody tr th .event-date{
+    color: #252525;
+    text-align: center;
+}
+@media screen and (max-width: 768px) .event-schedule-area-two .tab-content.table tbody tr td{
+    padding: 0px 0px;
+}
+.event-schedule-area-two .tab-content.table tbody tr td{
+    vertical-align: middle;
+}
+.table td, .table th{
+    border-top: 1px solid #dee2e6;
+}

@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 5, 2018, 12:46:19 AM
+    Author     : Aaditya
+*/
+body{
+    background-color:#f1f1f1;
+}
+
+/*.navbar{
+    /*background: url(back2.jpg)no-repeat center center fixed;*/
+  /*  border: none;
+    padding: 1% 0;
+    font-size: 1.2em;
+    position: relative;
+}
+.navbar-brand{
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+.navbar-default .navbar-nav li a{
+    color: #F21907;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active{
+    color: #F3AF07;
+    text-decoration: none;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}*/
+
+.ourTeam-hedding{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/heading.jpg');
+    height:200px;
+    width:100%;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background: linear-gradient(rgba(0,0,0,.10)); 
+}
+.ourTeam-hedding h1{
+    color:#fff;
+    padding:70px 0px;
+    font-weight:900;
+    z-index: 1;
+}
+.ourTeam-box{
+    border-top: 6px solid #5DDDD3;
+    background-color: #FFFFFF;
+}
+.text-center{
+	text-align: center;
+}
+.section1{
+    padding: 30px 0px 0px 0px;
+}
+.section5{
+    padding: 30px 0px 0px 0px;
+}
+.section1 img{
+    border:5px solid #5DDDD3;
+    padding:5px;
+    border-radius:50%;
+    height:170px;
+    width: 170px;
+}
+.section5 img{
+    border:5px solid red;
+    padding:5px;
+    border-radius:50%;
+    height:170px;
+    width: 170px;
+}
+.section2 h1{
+    font-size:20px;
+    color:#666666;
+    margin:0px;
+    border-bottom:2px solid #5DDDD3;
+    display: inline-block;
+    padding: 10px 0px;
+}
+.section2 p{
+    background-color: #5DDDD3;
+    display: inline-block;
+    font-weight: bold;
+    color:#fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-top: -20px;    
+}
+.section2 span{
+    color:#979597;
+}
+.section2 label{
+    background-color: #5DDDD3;
+    padding: 8px 10px 8px 10px;
+    color:#fff;
+    font-weight: normal;
+    margin: 30px 0px 35px 0px;
+    border-radius: 2px;
+}
+.section6 h1{
+    font-size:20px;
+    color:#666666;
+    margin:0px;
+    border-bottom:2px solid red;
+    display: inline-block;
+    padding: 10px 0px;
+}
+.section6 p{
+    background-color: red;
+    display: inline-block;
+    font-weight: bold;
+    color:#fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-top: -20px;    
+}
+.section6 span{
+    color:#979597;
+}
+.section6 label{
+    background-color: red;
+    padding: 8px 10px 8px 10px;
+    color:#fff;
+    font-weight: normal;
+    margin: 30px 0px 35px 0px;
+    border-radius: 2px;
+}
+.section3 p{
+    padding: 10px 15px 0px 15px;
+    font-size:12px;
+    color:#c3c9c9;
+}
+.section4{
+    padding:10px 0px 50px 0px;
+}
+.section4 i{
+    color:#fff;
+    padding:3px;
+    border-radius: 2px; 
+    font-size: 12px;
+    background-color: #5DDDD3;
+    cursor: pointer;
+}
+.section7{
+    padding:10px 0px 50px 0px;
+}
+.section7 i{
+    color:#fff;
+    padding:3px;
+    border-radius: 2px; 
+    font-size: 12px;
+    background-color: red;
+    cursor: pointer;
+}
+.section-info{
+    border-top:6px solid #90DFAA;
+}
+.section-danger{
+    border-top:6px solid #FD8469;
+}
+.section-mentor{
+    border-top:6px solid red;
+}
+.section-info .mentor img{
+    border:5px solid red;
+    padding:5px;
+}
+.section-info .section1 img{
+    border:5px solid #90DFAA;
+    padding:5px;
+}
+.section-info .section2 p{
+    background-color: #90DFAA;
+    color:#fff;
+}
+.section-danger .section2 p{
+    background-color: #FD8469;
+    color:#fff;
+}
+.section-danger .section1 img{
+    border:5px solid #FD8469;
+    padding:5px;
+}
+.section-info .section4 i{
+    background-color: #90DFAA;  
+}
+.section-danger .section4 i{
+    background-color: #FD8469;  
+}
+.section-info .section2 h1{
+    border-bottom:2px solid #90DFAA;
+}
+.section-danger .section2 h1{
+    border-bottom:2px solid #FD8469;
+}
